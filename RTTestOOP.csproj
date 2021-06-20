@@ -1,0 +1,123 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{5ECC754F-FDB9-43E7-8CAF-81164F6DB7F3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>RTTestOOP</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".vs\RTTest1\v15\.suo" />
+    <None Include=".vs\RTTest1\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\RTTest1\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\RTTest1\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\RTTest1\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="App.config" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\.signature.p7s" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoAndroid10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\MonoTouch10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\netcoreapp2.0\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\uap10.0.16299\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinios10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinmac20\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarintvos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\lib\xamarinwatchos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoAndroid10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\MonoTouch10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\netcoreapp2.0\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\uap10.0.16299\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinios10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinmac20\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarintvos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\ref\xamarinwatchos10\_._" />
+    <None Include="packages\System.Numerics.Vectors.4.5.0\System.Numerics.Vectors.4.5.0.nupkg" />
+    <None Include="Properties\Settings.settings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Box.cs" />
+    <Compile Include="Camera.cs" />
+    <Compile Include="Config.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LightSource.cs" />
+    <Compile Include="Plane.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs" />
+    <Compile Include="Properties\Settings.Designer.cs" />
+    <Compile Include="Ray.cs" />
+    <Compile Include="SceneObject.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\lib\portable-net45+win8+wp8+wpa81\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\LICENSE.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net45\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\net46\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard1.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.dll" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\ref\netstandard2.0\System.Numerics.Vectors.xml" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\THIRD-PARTY-NOTICES.TXT" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\useSharedDesignerContext.txt" />
+    <Content Include="packages\System.Numerics.Vectors.4.5.0\version.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
